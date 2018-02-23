@@ -304,5 +304,16 @@ namespace MyApplication.Controllers
                 stream.Dispose();
             }
         }
+
+
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
     }
 }

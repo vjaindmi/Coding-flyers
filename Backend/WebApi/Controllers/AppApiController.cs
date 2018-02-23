@@ -105,7 +105,10 @@ namespace WebApi.Controllers
             //var parsedResponse = JsonPrettyPrint(response);
             var parsedResponse = FromJSON<ImageUploadObject>(response);
             var tags = parsedResponse.tags.Where(x => x.confidence > 0.90).Select(x => x.name).ToList();
-
+            if(string.IsNullOrEmpty(tags.ToString()))
+            {
+                return "No Record Found";
+            }
 
             var rootData = JsonConvert.DeserializeObject<ImageUploadObject>(response);
             ImageUploadRequest uploadData = new ImageUploadRequest();

@@ -196,6 +196,8 @@
     <Content Include="Content\img\bg-main-corner-sprite.png" />
     <Content Include="Content\img\bg-main.png" />
     <Content Include="Content\img\bg-nav-corner-sprite.png" />
+    <Content Include="Content\img\imageplaceholder.png" />
+    <Content Include="Content\img\Loading_icon.gif" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
