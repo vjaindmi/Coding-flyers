@@ -55,13 +55,17 @@ class ResponseViewController: UIViewController {
         childImageView.image = UIImage(named: "child")
         
         
-        
-        let imageIntentString = entityIntent?.object(forKey: "image") as! String
-        actionImageView.sd_setImage(with: URL(string: imageIntentString), completed: nil)
+        if entityIntent?.object(forKey: "image") is NSNull {
+        }else {
+            let imageIntentString = entityIntent?.object(forKey: "image") as! String
+            actionImageView.sd_setImage(with: URL(string: imageIntentString), completed: nil)
+        }
 
-        let imageActionString = entityAction?.object(forKey: "image") as! String
-        entityImageView.sd_setImage(with: URL(string: imageActionString), completed: nil)
-
+        if entityAction?.object(forKey: "image") is NSNull {
+        } else {
+            let imageActionString = entityAction?.object(forKey: "image") as! String
+            entityImageView.sd_setImage(with: URL(string: imageActionString), completed: nil)
+        }
         
     }
 
@@ -101,28 +105,26 @@ class ResponseViewController: UIViewController {
         animationView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         animationView.center = CGPoint(x: self.view.center.x, y: self.view.center.y + self.view.center.y/2)
         animationView.contentMode = .scaleAspectFill
-        animationView.loopAnimation = true
+        animationView.loopAnimation = false
         self.view.addSubview(animationView)
-        animationView.play()
-        
-        
+        animationView.play { (active) in
+            animationView.removeFromSuperview()
+        }
+    
     }
     
     @IBAction func dislikeClicked(_ sender: Any)
     {
-        let animationView = LOTAnimationView(name: "like")
-        animationView.bounds = self.view.bounds
-        animationView.center = self.view.center
+        let animationView = LOTAnimationView(name: "50-CryingEmoji")
+        animationView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        animationView.center = CGPoint(x: self.view.center.x, y: self.view.center.y + self.view.center.y/2)
         animationView.contentMode = .scaleAspectFill
-        animationView.loopAnimation = true
+        animationView.loopAnimation = false
         self.view.addSubview(animationView)
-        animationView.play()
-        
-        UIView.animate(withDuration: 2, animations: {
-            
-        }) { (active) in
+        animationView.play { (active) in
             animationView.removeFromSuperview()
         }
+        
     }
     
     
@@ -133,7 +135,7 @@ class ResponseViewController: UIViewController {
     
     func textToSpeech(str :String )
     {
-        let myUtterance = AVSpeechUtterance(string:"Helloo" )
+        let myUtterance = AVSpeechUtterance(string:str )
         myUtterance.rate = 0.3
         myUtterance.volume = 1
         myUtterance.voice = AVSpeechSynthesisVoice(language: "en-IN")

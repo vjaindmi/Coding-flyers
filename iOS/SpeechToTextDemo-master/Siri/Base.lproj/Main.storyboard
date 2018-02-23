@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="AcademyEngraved.ttf">
+            <string>AcademyEngravedLetPlain</string>
+        </array>
         <array key="AvenirNext.ttc">
             <string>AvenirNext-Regular</string>
         </array>
@@ -152,6 +155,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEARNICTIFY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-ub-Dh0">
+                                <rect key="frame" x="81.5" y="615" width="212" height="36"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2r-q6-DSA">
                                 <rect key="frame" x="67" y="127" width="240" height="191"/>
                                 <subviews>
@@ -244,7 +253,9 @@
                             <constraint firstItem="x2r-q6-DSA" firstAttribute="centerX" secondItem="pa3-dC-jij" secondAttribute="centerX" id="0ze-n6-Pgi"/>
                             <constraint firstItem="wKf-jW-1Dc" firstAttribute="centerY" secondItem="pa3-dC-jij" secondAttribute="centerY" multiplier="4:3" id="4zQ-Gm-s3E"/>
                             <constraint firstItem="IGk-rC-ta3" firstAttribute="leading" secondItem="pa3-dC-jij" secondAttribute="leading" id="8Yh-1b-vaZ"/>
+                            <constraint firstItem="Lb3-y3-HCm" firstAttribute="top" secondItem="yJ9-ub-Dh0" secondAttribute="bottom" constant="16" id="EQE-EZ-VDq"/>
                             <constraint firstItem="IGk-rC-ta3" firstAttribute="top" secondItem="uLG-Uz-hXc" secondAttribute="bottom" constant="-20" id="Hpf-im-MSd"/>
+                            <constraint firstItem="yJ9-ub-Dh0" firstAttribute="centerX" secondItem="pa3-dC-jij" secondAttribute="centerX" id="M82-bb-OXZ"/>
                             <constraint firstItem="wKf-jW-1Dc" firstAttribute="centerX" secondItem="pa3-dC-jij" secondAttribute="centerX" id="Miq-Hq-TXg"/>
                             <constraint firstAttribute="trailing" secondItem="IGk-rC-ta3" secondAttribute="trailing" id="Nv3-fK-YM2"/>
                             <constraint firstItem="x2r-q6-DSA" firstAttribute="centerY" secondItem="pa3-dC-jij" secondAttribute="centerY" multiplier="2:3" id="nf3-CI-gHB"/>

@@ -244,7 +244,7 @@ class SpeechToTextViewController: UIViewController, SFSpeechRecognizerDelegate,R
             let dataArray = data.object(forKey: "entities") as! NSArray
             let intent = dataArray.firstObject as?  NSDictionary
             let action = (dataArray.lastObject as? NSDictionary)
-            if intent?.object(forKey: "image") is NSNull {
+            if intent?.object(forKey: "image") is NSNull && action?.object(forKey: "image") is NSNull {
                 let alertVC =  UIAlertController(title: "", message: "We couldn't find appropriate response for your inputs.Please try again.", preferredStyle: .alert)
                 alertVC.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: { (action) in
                     self.animationView3.removeFromSuperview()

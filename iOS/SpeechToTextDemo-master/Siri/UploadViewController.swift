@@ -8,6 +8,7 @@
 
 import UIKit
 import Lottie
+import AVFoundation
 
 class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate,ResponseDelegate {
     
@@ -19,6 +20,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UI
     let imagePicker = UIImagePickerController()
     let animationView2 : LOTAnimationView = LOTAnimationView(name: "ripple")
     let animationView3 : LOTAnimationView = LOTAnimationView(name: "dna_like_loader")
+    let synth = AVSpeechSynthesizer()
 
    
     override func viewDidLoad() {
@@ -129,6 +131,15 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UI
         self.loaderView.isHidden = true
         let tags = data.object(forKey: "message") as! String
         self.tagLabel.text = tags
-        
+        self.textToSpeech(str: tags)
+    }
+    
+    func textToSpeech(str :String )
+    {
+        let myUtterance = AVSpeechUtterance(string:str )
+        myUtterance.rate = 0.3
+        myUtterance.volume = 1
+        myUtterance.voice = AVSpeechSynthesisVoice(language: "en-IN")
+        synth.speak(myUtterance)
     }
 }

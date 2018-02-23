@@ -45,12 +45,18 @@
 		991357A8203FDFC500022371 /* done_button.json in Resources */ = {isa = PBXBuildFile; fileRef = 991357A7203FDFC500022371 /* done_button.json */; };
 		991357AF204004C500022371 /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 991357AD204004C500022371 /* img_0.png */; };
 		991357B0204004C500022371 /* loveanimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 991357AE204004C500022371 /* loveanimation.json */; };
+		99A6C229204027C900C7D8FD /* thumb.json in Resources */ = {isa = PBXBuildFile; fileRef = 99A6C224204027C800C7D8FD /* thumb.json */; };
+		99A6C22A204027C900C7D8FD /* thumb auto-save 2.aep in Resources */ = {isa = PBXBuildFile; fileRef = 99A6C226204027C800C7D8FD /* thumb auto-save 2.aep */; };
+		99A6C22B204027C900C7D8FD /* thumb auto-save 1.aep in Resources */ = {isa = PBXBuildFile; fileRef = 99A6C227204027C800C7D8FD /* thumb auto-save 1.aep */; };
+		99A6C22C204027C900C7D8FD /* thumb.aep in Resources */ = {isa = PBXBuildFile; fileRef = 99A6C228204027C800C7D8FD /* thumb.aep */; };
+		99A6C230204039C400C7D8FD /* 50-CryingEmoji.json in Resources */ = {isa = PBXBuildFile; fileRef = 99A6C22E204039C300C7D8FD /* 50-CryingEmoji.json */; };
+		99A6C231204039C400C7D8FD /* 50 - Crying Emoji.aep in Resources */ = {isa = PBXBuildFile; fileRef = 99A6C22F204039C300C7D8FD /* 50 - Crying Emoji.aep */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		328994C47B8B8EE54A98E586 /* Pods-Siri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Siri/Pods-Siri.debug.xcconfig"; sourceTree = "<group>"; };
 		6DE8D9F7E618C64436B80210 /* Pods_Siri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		805027E71D389E5700CE3F1F /* Siri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		805027E71D389E5700CE3F1F /* Learnictify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learnictify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		805027EA1D389E5700CE3F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		805027EF1D389E5700CE3F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		805027F11D389E5700CE3F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +96,12 @@
 		991357A7203FDFC500022371 /* done_button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = done_button.json; sourceTree = "<group>"; };
 		991357AD204004C500022371 /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
 		991357AE204004C500022371 /* loveanimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loveanimation.json; sourceTree = "<group>"; };
+		99A6C224204027C800C7D8FD /* thumb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = thumb.json; sourceTree = "<group>"; };
+		99A6C226204027C800C7D8FD /* thumb auto-save 2.aep */ = {isa = PBXFileReference; lastKnownFileType = file; path = "thumb auto-save 2.aep"; sourceTree = "<group>"; };
+		99A6C227204027C800C7D8FD /* thumb auto-save 1.aep */ = {isa = PBXFileReference; lastKnownFileType = file; path = "thumb auto-save 1.aep"; sourceTree = "<group>"; };
+		99A6C228204027C800C7D8FD /* thumb.aep */ = {isa = PBXFileReference; lastKnownFileType = file; path = thumb.aep; sourceTree = "<group>"; };
+		99A6C22E204039C300C7D8FD /* 50-CryingEmoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "50-CryingEmoji.json"; sourceTree = "<group>"; };
+		99A6C22F204039C300C7D8FD /* 50 - Crying Emoji.aep */ = {isa = PBXFileReference; lastKnownFileType = file; path = "50 - Crying Emoji.aep"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +146,7 @@
 		805027E81D389E5700CE3F1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				805027E71D389E5700CE3F1F /* Siri.app */,
+				805027E71D389E5700CE3F1F /* Learnictify.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +181,8 @@
 		9913575F203F38A700022371 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				99A6C22D204039C300C7D8FD /* CryingEmotion */,
+				99A6C223204027C800C7D8FD /* thumb */,
 				991357AB204004C500022371 /* heart_animation */,
 				991357A7203FDFC500022371 /* done_button.json */,
 				991357A0203FD95800022371 /* like.json */,
@@ -256,6 +270,34 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		99A6C223204027C800C7D8FD /* thumb */ = {
+			isa = PBXGroup;
+			children = (
+				99A6C224204027C800C7D8FD /* thumb.json */,
+				99A6C225204027C800C7D8FD /* Adobe After Effects Auto-Save */,
+				99A6C228204027C800C7D8FD /* thumb.aep */,
+			);
+			path = thumb;
+			sourceTree = "<group>";
+		};
+		99A6C225204027C800C7D8FD /* Adobe After Effects Auto-Save */ = {
+			isa = PBXGroup;
+			children = (
+				99A6C226204027C800C7D8FD /* thumb auto-save 2.aep */,
+				99A6C227204027C800C7D8FD /* thumb auto-save 1.aep */,
+			);
+			path = "Adobe After Effects Auto-Save";
+			sourceTree = "<group>";
+		};
+		99A6C22D204039C300C7D8FD /* CryingEmotion */ = {
+			isa = PBXGroup;
+			children = (
+				99A6C22E204039C300C7D8FD /* 50-CryingEmoji.json */,
+				99A6C22F204039C300C7D8FD /* 50 - Crying Emoji.aep */,
+			);
+			path = CryingEmotion;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,7 +318,7 @@
 			);
 			name = Siri;
 			productName = Siri;
-			productReference = 805027E71D389E5700CE3F1F /* Siri.app */;
+			productReference = 805027E71D389E5700CE3F1F /* Learnictify.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -320,11 +362,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A6C22A204027C900C7D8FD /* thumb auto-save 2.aep in Resources */,
+				99A6C229204027C900C7D8FD /* thumb.json in Resources */,
 				9913577C203F511A00022371 /* Preview.png in Resources */,
 				9913579D203F66A500022371 /* dna_like_loader.json in Resources */,
+				99A6C230204039C400C7D8FD /* 50-CryingEmoji.json in Resources */,
 				991357B0204004C500022371 /* loveanimation.json in Resources */,
 				9913578D203F57F900022371 /* Voice.json in Resources */,
 				991357A1203FD95800022371 /* like.json in Resources */,
+				99A6C22B204027C900C7D8FD /* thumb auto-save 1.aep in Resources */,
 				99135761203F38C700022371 /* gradient_animated_background.json in Resources */,
 				99135765203F3AA600022371 /* beer_bubbles.json in Resources */,
 				99135776203F4D8600022371 /* img_0.png in Resources */,
@@ -336,8 +382,10 @@
 				99135793203F5F0D00022371 /* message_arrow.json in Resources */,
 				991357A8203FDFC500022371 /* done_button.json in Resources */,
 				9913576D203F4BA100022371 /* smiley_stack_ii.json in Resources */,
+				99A6C22C204027C900C7D8FD /* thumb.aep in Resources */,
 				9913578F203F5C5D00022371 /* material_wave_loading.json in Resources */,
 				9913577E203F511A00022371 /* Bouncy.aep in Resources */,
+				99A6C231204039C400C7D8FD /* 50 - Crying Emoji.aep in Resources */,
 				805027F21D389E5700CE3F1F /* Assets.xcassets in Resources */,
 				99135799203F653800022371 /* splashy_loader.json in Resources */,
 				99135763203F3A9400022371 /* get_started_slider..json in Resources */,
@@ -546,7 +594,7 @@
 				INFOPLIST_FILE = Siri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.Siri;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Learnictify;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -560,7 +608,7 @@
 				INFOPLIST_FILE = Siri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.Siri;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Learnictify;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
