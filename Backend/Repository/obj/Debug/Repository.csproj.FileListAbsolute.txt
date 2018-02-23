@@ -1,0 +1,15 @@
+E:\New folder (2)\MyApplication\MyApplication\Repository\bin\Debug\Repository.dll.config
+E:\New folder (2)\MyApplication\MyApplication\Repository\bin\Debug\Repository.dll
+E:\New folder (2)\MyApplication\MyApplication\Repository\bin\Debug\Repository.pdb
+E:\New folder (2)\MyApplication\MyApplication\Repository\bin\Debug\EntityFramework.dll
+E:\New folder (2)\MyApplication\MyApplication\Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\New folder (2)\MyApplication\MyApplication\Repository\bin\Debug\EntityFramework.xml
+E:\New folder (2)\MyApplication\MyApplication\Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\New folder (2)\MyApplication\MyApplication\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+E:\New folder (2)\MyApplication\MyApplication\Repository\obj\Debug\Repository.dll
+E:\New folder (2)\MyApplication\MyApplication\Repository\obj\Debug\Repository.pdb
+E:\New folder (2)\MyApplication\MyApplication\Repository\bin\Debug\Newtonsoft.Json.dll
+E:\New folder (2)\MyApplication\MyApplication\Repository\bin\Debug\Newtonsoft.Json.xml
+E:\New folder (2)\MyApplication\MyApplication\Repository\obj\Debug\Repository.Migrations._10.resources
+E:\New folder (2)\MyApplication\MyApplication\Repository\obj\Debug\Repository.csproj.GenerateResource.Cache
+E:\New folder (2)\MyApplication\MyApplication\Repository\obj\Debug\Repository.Migrations._20.resources
