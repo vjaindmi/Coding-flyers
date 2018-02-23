@@ -12,7 +12,7 @@ import Lottie
 
 
 
-class SpeechToTextViewController: UIViewController, SFSpeechRecognizerDelegate,ResponseDelegate {
+class SpeechToTextViewController: UIViewController, SFSpeechRecognizerDelegate,ResponseDelegate,UITextViewDelegate {
   
     
 	
@@ -23,6 +23,7 @@ class SpeechToTextViewController: UIViewController, SFSpeechRecognizerDelegate,R
     var animationView : LOTAnimationView = LOTAnimationView(name: "beer_bubbles")
     var animationView1 : LOTAnimationView = LOTAnimationView(name: "material_wave_loading")
     var animationView2 : LOTAnimationView = LOTAnimationView(name: "ripple")
+    let animationView3 : LOTAnimationView = LOTAnimationView(name: "dna_like_loader")
 
     @IBOutlet weak var micView: UIView!
     private let speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "en-IN"))! //en-US
@@ -33,6 +34,7 @@ class SpeechToTextViewController: UIViewController, SFSpeechRecognizerDelegate,R
     
 	override func viewDidLoad() {
         super.viewDidLoad()
+        textView.delegate = self
         self.loaderView.isHidden = true
         self.loadAnimations()
         microphoneButton.isEnabled = false
@@ -107,6 +109,7 @@ class SpeechToTextViewController: UIViewController, SFSpeechRecognizerDelegate,R
             animationView2.play()
 
         } else {
+            textView.text = ""
             animationView2.isHidden = true
             self.goBtn.isHidden = true
             startRecording()
@@ -210,7 +213,6 @@ class SpeechToTextViewController: UIViewController, SFSpeechRecognizerDelegate,R
     {
         animationView2.isHidden = true
         self.loaderView.isHidden = false
-        let animationView3 : LOTAnimationView = LOTAnimationView(name: "dna_like_loader")
         animationView3.bounds = self.view.bounds
         animationView3.center = self.view.center
         animationView3.contentMode = .scaleAspectFit
@@ -218,21 +220,50 @@ class SpeechToTextViewController: UIViewController, SFSpeechRecognizerDelegate,R
         self.view.addSubview(animationView3)
         animationView3.play()
         SiriRequestMethods.sharedInstance.delegate = self
+        var strToPass = textView.text
         
-        SiriRequestMethods.sharedInstance.fetchImagesFor(_text: textView.text) { (_) in
+        strToPass = (strToPass?.count as! Int)>0 ? strToPass : "Hello"
+        SiriRequestMethods.sharedInstance.fetchImagesFor(_text: strToPass!) { (_) in
             
         }        
     }
     
     
     func loadResponseView(data : NSDictionary){
-        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-        let showVC : ResponseViewController = storyBoard.instantiateViewController(withIdentifier: "ResponseViewController") as! ResponseViewController
-        showVC.query = data.object(forKey: "query") as? String
-        let dataArray = data.object(forKey: "entities") as! NSArray
-        showVC.entityIntent = dataArray.firstObject as?  NSDictionary
-        showVC.entityAction = (dataArray.lastObject as? NSDictionary)
-        self.navigationController?.pushViewController(showVC, animated: true);
+        let queryString = data.object(forKey: "query") as? String
+
+        if queryString == "No Response" {
+           let alertVC =  UIAlertController(title: "", message: "We couldn't find appropriate response for your inputs.Please try again.", preferredStyle: .alert)
+            alertVC.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: { (action) in
+                self.animationView3.removeFromSuperview()
+                self.loaderView.isHidden = true
+            }))
+            self.present(alertVC, animated: true, completion: nil)
+        }
+        else {
+            let dataArray = data.object(forKey: "entities") as! NSArray
+            let intent = dataArray.firstObject as?  NSDictionary
+            let action = (dataArray.lastObject as? NSDictionary)
+            if intent?.object(forKey: "image") is NSNull {
+                let alertVC =  UIAlertController(title: "", message: "We couldn't find appropriate response for your inputs.Please try again.", preferredStyle: .alert)
+                alertVC.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: { (action) in
+                    self.animationView3.removeFromSuperview()
+                    self.loaderView.isHidden = true
+                }))
+                self.present(alertVC, animated: true, completion: nil)
+                
+            }
+            else {
+                let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+                let showVC : ResponseViewController = storyBoard.instantiateViewController(withIdentifier: "ResponseViewController") as! ResponseViewController
+                showVC.query = queryString
+                showVC.entityIntent = intent
+                showVC.entityAction = action
+                self.navigationController?.pushViewController(showVC, animated: true);
+
+            }
+            
+        }
     }
     
     
@@ -242,5 +273,20 @@ class SpeechToTextViewController: UIViewController, SFSpeechRecognizerDelegate,R
         }
         
     }
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textView.text = ""
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if (text == "\n") {
+            textView.resignFirstResponder()
+            self.goBtn.isHidden = false
+            animationView2.isHidden = false
+            animationView2.play()
+            return false
+        }
+        return true
+    }
+    
 }
 

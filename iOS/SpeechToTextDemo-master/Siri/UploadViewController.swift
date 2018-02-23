@@ -9,14 +9,16 @@
 import UIKit
 import Lottie
 
-class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-
+class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate,ResponseDelegate {
+    
+    @IBOutlet weak var tagLabel: UILabel!
     @IBOutlet weak var loaderView: UIView!
     @IBOutlet weak var goBtn: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var getAPicBtn: UIButton!
     let imagePicker = UIImagePickerController()
     let animationView2 : LOTAnimationView = LOTAnimationView(name: "ripple")
+    let animationView3 : LOTAnimationView = LOTAnimationView(name: "dna_like_loader")
 
    
     override func viewDidLoad() {
@@ -43,6 +45,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UI
     }
     
     @IBAction func getAPicBtnClicked(_ sender: Any) {
+        self.tagLabel.text = ""
        let alert =  UIAlertController(title: "Get a picture to upload", message: "", preferredStyle: UIAlertControllerStyle.actionSheet)
         alert.addAction(UIAlertAction(title: "Camera", style: UIAlertActionStyle.default, handler: { (action) in
             self.openCamera()
@@ -107,12 +110,25 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate,UI
     {
         animationView2.isHidden = true
         self.loaderView.isHidden = false
-        let animationView3 : LOTAnimationView = LOTAnimationView(name: "dna_like_loader")
         animationView3.bounds = self.view.bounds
         animationView3.center = self.view.center
         animationView3.contentMode = .scaleAspectFit
         animationView3.loopAnimation = true
         self.view.addSubview(animationView3)
         animationView3.play()
+        SiriRequestMethods.sharedInstance.delegate = self
+        SiriRequestMethods.sharedInstance.uploadImage(imageData: UIImageJPEGRepresentation(self.imageView.image!, 1.0)!) {
+            
+        }
+    }
+    
+    
+    func responseReceived(data: NSDictionary) {
+        
+        animationView3.isHidden = true
+        self.loaderView.isHidden = true
+        let tags = data.object(forKey: "message") as! String
+        self.tagLabel.text = tags
+        
     }
 }

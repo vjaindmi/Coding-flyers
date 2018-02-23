@@ -97,24 +97,20 @@ class ResponseViewController: UIViewController {
     }
     @IBAction func likeClicked(_ sender: Any)
     {
-        let animationView = LOTAnimationView(name: "loveanimation")
-        animationView.bounds = self.view.bounds
-        animationView.center = self.view.center
+        let animationView = LOTAnimationView(name: "like")
+        animationView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        animationView.center = CGPoint(x: self.view.center.x, y: self.view.center.y + self.view.center.y/2)
         animationView.contentMode = .scaleAspectFill
         animationView.loopAnimation = true
         self.view.addSubview(animationView)
         animationView.play()
         
-        UIView.animate(withDuration: 2, animations: {
-            
-        }) { (active) in
-            animationView.removeFromSuperview()
-        }
+        
     }
     
     @IBAction func dislikeClicked(_ sender: Any)
     {
-        let animationView = LOTAnimationView(name: "loveanimation")
+        let animationView = LOTAnimationView(name: "like")
         animationView.bounds = self.view.bounds
         animationView.center = self.view.center
         animationView.contentMode = .scaleAspectFill
