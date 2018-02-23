@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32B9F88AB4F791F629AF620D /* Pods_Siri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE8D9F7E618C64436B80210 /* Pods_Siri.framework */; };
+		805027EB1D389E5700CE3F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805027EA1D389E5700CE3F1F /* AppDelegate.swift */; };
+		805027F01D389E5700CE3F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805027EE1D389E5700CE3F1F /* Main.storyboard */; };
+		805027F21D389E5700CE3F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805027F11D389E5700CE3F1F /* Assets.xcassets */; };
+		805027F51D389E5700CE3F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805027F31D389E5700CE3F1F /* LaunchScreen.storyboard */; };
+		9913574C203DF4DD00022371 /* SpeechToTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913574B203DF4DD00022371 /* SpeechToTextViewController.swift */; };
+		9913574E203DFC6E00022371 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913574D203DFC6E00022371 /* MainViewController.swift */; };
+		99135750203DFE5900022371 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913574F203DFE5900022371 /* UploadViewController.swift */; };
+		99135754203E017600022371 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99135753203E017600022371 /* Utility.swift */; };
+		9913575E203F00A100022371 /* SiriRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913575D203F00A100022371 /* SiriRequestClient.swift */; };
+		99135761203F38C700022371 /* gradient_animated_background.json in Resources */ = {isa = PBXBuildFile; fileRef = 99135760203F38C700022371 /* gradient_animated_background.json */; };
+		99135763203F3A9400022371 /* get_started_slider..json in Resources */ = {isa = PBXBuildFile; fileRef = 99135762203F3A9400022371 /* get_started_slider..json */; };
+		99135765203F3AA600022371 /* beer_bubbles.json in Resources */ = {isa = PBXBuildFile; fileRef = 99135764203F3AA600022371 /* beer_bubbles.json */; };
+		99135767203F3CF400022371 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 99135766203F3CF400022371 /* confetti.json */; };
+		9913576B203F4B7600022371 /* camera.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913576A203F4B7600022371 /* camera.json */; };
+		9913576D203F4BA100022371 /* smiley_stack_ii.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913576C203F4BA100022371 /* smiley_stack_ii.json */; };
+		99135775203F4D8600022371 /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 99135772203F4D8500022371 /* img_1.png */; };
+		99135776203F4D8600022371 /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 99135773203F4D8500022371 /* img_0.png */; };
+		99135777203F4D8600022371 /* collection.json in Resources */ = {isa = PBXBuildFile; fileRef = 99135774203F4D8500022371 /* collection.json */; };
+		9913577C203F511A00022371 /* Preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 99135779203F511A00022371 /* Preview.png */; };
+		9913577D203F511A00022371 /* preloader.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913577A203F511A00022371 /* preloader.json */; };
+		9913577E203F511A00022371 /* Bouncy.aep in Resources */ = {isa = PBXBuildFile; fileRef = 9913577B203F511A00022371 /* Bouncy.aep */; };
+		9913578C203F57F900022371 /* 26 - Microphone.aep in Resources */ = {isa = PBXBuildFile; fileRef = 9913578A203F57F900022371 /* 26 - Microphone.aep */; };
+		9913578D203F57F900022371 /* Voice.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913578B203F57F900022371 /* Voice.json */; };
+		9913578F203F5C5D00022371 /* material_wave_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913578E203F5C5D00022371 /* material_wave_loading.json */; };
+		99135793203F5F0D00022371 /* message_arrow.json in Resources */ = {isa = PBXBuildFile; fileRef = 99135792203F5F0C00022371 /* message_arrow.json */; };
+		99135795203F61E000022371 /* ripple.json in Resources */ = {isa = PBXBuildFile; fileRef = 99135794203F61E000022371 /* ripple.json */; };
+		99135797203F64AA00022371 /* heart_rate.json in Resources */ = {isa = PBXBuildFile; fileRef = 99135796203F64A900022371 /* heart_rate.json */; };
+		99135799203F653800022371 /* splashy_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 99135798203F653800022371 /* splashy_loader.json */; };
+		9913579B203F660100022371 /* circles.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913579A203F660100022371 /* circles.json */; };
+		9913579D203F66A500022371 /* dna_like_loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913579C203F66A500022371 /* dna_like_loader.json */; };
+		9913579F203F705100022371 /* ResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913579E203F705100022371 /* ResponseViewController.swift */; };
+		991357A1203FD95800022371 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = 991357A0203FD95800022371 /* like.json */; };
+		991357A5203FDEF200022371 /* star.json in Resources */ = {isa = PBXBuildFile; fileRef = 991357A3203FDEF200022371 /* star.json */; };
+		991357A6203FDEF200022371 /* star.aep in Resources */ = {isa = PBXBuildFile; fileRef = 991357A4203FDEF200022371 /* star.aep */; };
+		991357A8203FDFC500022371 /* done_button.json in Resources */ = {isa = PBXBuildFile; fileRef = 991357A7203FDFC500022371 /* done_button.json */; };
+		991357AF204004C500022371 /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 991357AD204004C500022371 /* img_0.png */; };
+		991357B0204004C500022371 /* loveanimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 991357AE204004C500022371 /* loveanimation.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		328994C47B8B8EE54A98E586 /* Pods-Siri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Siri/Pods-Siri.debug.xcconfig"; sourceTree = "<group>"; };
+		6DE8D9F7E618C64436B80210 /* Pods_Siri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		805027E71D389E5700CE3F1F /* Siri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		805027EA1D389E5700CE3F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		805027EF1D389E5700CE3F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		805027F11D389E5700CE3F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		805027F41D389E5700CE3F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		805027F61D389E5700CE3F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F0A6C5896161D97D128B00 /* Pods-Siri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siri.release.xcconfig"; path = "Pods/Target Support Files/Pods-Siri/Pods-Siri.release.xcconfig"; sourceTree = "<group>"; };
+		9913574B203DF4DD00022371 /* SpeechToTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechToTextViewController.swift; sourceTree = "<group>"; };
+		9913574D203DFC6E00022371 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9913574F203DFE5900022371 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		99135753203E017600022371 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		9913575D203F00A100022371 /* SiriRequestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiriRequestClient.swift; sourceTree = "<group>"; };
+		99135760203F38C700022371 /* gradient_animated_background.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gradient_animated_background.json; sourceTree = "<group>"; };
+		99135762203F3A9400022371 /* get_started_slider..json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = get_started_slider..json; sourceTree = "<group>"; };
+		99135764203F3AA600022371 /* beer_bubbles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beer_bubbles.json; sourceTree = "<group>"; };
+		99135766203F3CF400022371 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
+		9913576A203F4B7600022371 /* camera.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = camera.json; sourceTree = "<group>"; };
+		9913576C203F4BA100022371 /* smiley_stack_ii.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = smiley_stack_ii.json; sourceTree = "<group>"; };
+		99135772203F4D8500022371 /* img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_1.png; sourceTree = "<group>"; };
+		99135773203F4D8500022371 /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
+		99135774203F4D8500022371 /* collection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = collection.json; sourceTree = "<group>"; };
+		99135779203F511A00022371 /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
+		9913577A203F511A00022371 /* preloader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = preloader.json; sourceTree = "<group>"; };
+		9913577B203F511A00022371 /* Bouncy.aep */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bouncy.aep; sourceTree = "<group>"; };
+		9913578A203F57F900022371 /* 26 - Microphone.aep */ = {isa = PBXFileReference; lastKnownFileType = file; path = "26 - Microphone.aep"; sourceTree = "<group>"; };
+		9913578B203F57F900022371 /* Voice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Voice.json; sourceTree = "<group>"; };
+		9913578E203F5C5D00022371 /* material_wave_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = material_wave_loading.json; sourceTree = "<group>"; };
+		99135792203F5F0C00022371 /* message_arrow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = message_arrow.json; sourceTree = "<group>"; };
+		99135794203F61E000022371 /* ripple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ripple.json; sourceTree = "<group>"; };
+		99135796203F64A900022371 /* heart_rate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart_rate.json; sourceTree = "<group>"; };
+		99135798203F653800022371 /* splashy_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = splashy_loader.json; sourceTree = "<group>"; };
+		9913579A203F660100022371 /* circles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = circles.json; sourceTree = "<group>"; };
+		9913579C203F66A500022371 /* dna_like_loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dna_like_loader.json; sourceTree = "<group>"; };
+		9913579E203F705100022371 /* ResponseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseViewController.swift; sourceTree = "<group>"; };
+		991357A0203FD95800022371 /* like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like.json; sourceTree = "<group>"; };
+		991357A3203FDEF200022371 /* star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = star.json; sourceTree = "<group>"; };
+		991357A4203FDEF200022371 /* star.aep */ = {isa = PBXFileReference; lastKnownFileType = file; path = star.aep; sourceTree = "<group>"; };
+		991357A7203FDFC500022371 /* done_button.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = done_button.json; sourceTree = "<group>"; };
+		991357AD204004C500022371 /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
+		991357AE204004C500022371 /* loveanimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loveanimation.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		805027E41D389E5700CE3F1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B9F88AB4F791F629AF620D /* Pods_Siri.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A289BC627C19260DCECAFA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				328994C47B8B8EE54A98E586 /* Pods-Siri.debug.xcconfig */,
+				85F0A6C5896161D97D128B00 /* Pods-Siri.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D03F0940FF9D67C99C328D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DE8D9F7E618C64436B80210 /* Pods_Siri.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		805027DE1D389E5700CE3F1F = {
+			isa = PBXGroup;
+			children = (
+				805027E91D389E5700CE3F1F /* Siri */,
+				805027E81D389E5700CE3F1F /* Products */,
+				3A289BC627C19260DCECAFA2 /* Pods */,
+				7D03F0940FF9D67C99C328D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		805027E81D389E5700CE3F1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				805027E71D389E5700CE3F1F /* Siri.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		805027E91D389E5700CE3F1F /* Siri */ = {
+			isa = PBXGroup;
+			children = (
+				9913575F203F38A700022371 /* Animations */,
+				9913575C203F008200022371 /* Network */,
+				9913574D203DFC6E00022371 /* MainViewController.swift */,
+				9913574B203DF4DD00022371 /* SpeechToTextViewController.swift */,
+				9913574F203DFE5900022371 /* UploadViewController.swift */,
+				9913579E203F705100022371 /* ResponseViewController.swift */,
+				805027EA1D389E5700CE3F1F /* AppDelegate.swift */,
+				99135753203E017600022371 /* Utility.swift */,
+				805027EE1D389E5700CE3F1F /* Main.storyboard */,
+				805027F11D389E5700CE3F1F /* Assets.xcassets */,
+				805027F31D389E5700CE3F1F /* LaunchScreen.storyboard */,
+				805027F61D389E5700CE3F1F /* Info.plist */,
+			);
+			path = Siri;
+			sourceTree = "<group>";
+		};
+		9913575C203F008200022371 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9913575D203F00A100022371 /* SiriRequestClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9913575F203F38A700022371 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				991357AB204004C500022371 /* heart_animation */,
+				991357A7203FDFC500022371 /* done_button.json */,
+				991357A0203FD95800022371 /* like.json */,
+				991357A2203FDEF200022371 /* star */,
+				9913579C203F66A500022371 /* dna_like_loader.json */,
+				9913579A203F660100022371 /* circles.json */,
+				99135798203F653800022371 /* splashy_loader.json */,
+				99135796203F64A900022371 /* heart_rate.json */,
+				99135794203F61E000022371 /* ripple.json */,
+				99135792203F5F0C00022371 /* message_arrow.json */,
+				9913578E203F5C5D00022371 /* material_wave_loading.json */,
+				99135789203F57F900022371 /* AE_JSON_Voice */,
+				99135778203F511A00022371 /* bouncy_loader */,
+				99135770203F4D8500022371 /* collection */,
+				9913576C203F4BA100022371 /* smiley_stack_ii.json */,
+				9913576A203F4B7600022371 /* camera.json */,
+				99135766203F3CF400022371 /* confetti.json */,
+				99135764203F3AA600022371 /* beer_bubbles.json */,
+				99135762203F3A9400022371 /* get_started_slider..json */,
+				99135760203F38C700022371 /* gradient_animated_background.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		99135770203F4D8500022371 /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				99135771203F4D8500022371 /* images */,
+				99135774203F4D8500022371 /* collection.json */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
+		99135771203F4D8500022371 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				99135772203F4D8500022371 /* img_1.png */,
+				99135773203F4D8500022371 /* img_0.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		99135778203F511A00022371 /* bouncy_loader */ = {
+			isa = PBXGroup;
+			children = (
+				99135779203F511A00022371 /* Preview.png */,
+				9913577A203F511A00022371 /* preloader.json */,
+				9913577B203F511A00022371 /* Bouncy.aep */,
+			);
+			path = bouncy_loader;
+			sourceTree = "<group>";
+		};
+		99135789203F57F900022371 /* AE_JSON_Voice */ = {
+			isa = PBXGroup;
+			children = (
+				9913578A203F57F900022371 /* 26 - Microphone.aep */,
+				9913578B203F57F900022371 /* Voice.json */,
+			);
+			path = AE_JSON_Voice;
+			sourceTree = "<group>";
+		};
+		991357A2203FDEF200022371 /* star */ = {
+			isa = PBXGroup;
+			children = (
+				991357A3203FDEF200022371 /* star.json */,
+				991357A4203FDEF200022371 /* star.aep */,
+			);
+			path = star;
+			sourceTree = "<group>";
+		};
+		991357AB204004C500022371 /* heart_animation */ = {
+			isa = PBXGroup;
+			children = (
+				991357AC204004C500022371 /* images */,
+				991357AE204004C500022371 /* loveanimation.json */,
+			);
+			path = heart_animation;
+			sourceTree = "<group>";
+		};
+		991357AC204004C500022371 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				991357AD204004C500022371 /* img_0.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		805027E61D389E5700CE3F1F /* Siri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 805027F91D389E5700CE3F1F /* Build configuration list for PBXNativeTarget "Siri" */;
+			buildPhases = (
+				34BCE763FF7047AF1D77EAD9 /* [CP] Check Pods Manifest.lock */,
+				805027E31D389E5700CE3F1F /* Sources */,
+				805027E41D389E5700CE3F1F /* Frameworks */,
+				805027E51D389E5700CE3F1F /* Resources */,
+				2CE0A52A71BED95E7E0F7D16 /* [CP] Embed Pods Frameworks */,
+				3868ABF45E7525A07C7874BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Siri;
+			productName = Siri;
+			productReference = 805027E71D389E5700CE3F1F /* Siri.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		805027DF1D389E5700CE3F1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Sahand Edrisian";
+				TargetAttributes = {
+					805027E61D389E5700CE3F1F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2UDQRNR4F2;
+						DevelopmentTeamName = "Stephen Edrisian";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 805027E21D389E5700CE3F1F /* Build configuration list for PBXProject "Siri" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 805027DE1D389E5700CE3F1F;
+			productRefGroup = 805027E81D389E5700CE3F1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				805027E61D389E5700CE3F1F /* Siri */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		805027E51D389E5700CE3F1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9913577C203F511A00022371 /* Preview.png in Resources */,
+				9913579D203F66A500022371 /* dna_like_loader.json in Resources */,
+				991357B0204004C500022371 /* loveanimation.json in Resources */,
+				9913578D203F57F900022371 /* Voice.json in Resources */,
+				991357A1203FD95800022371 /* like.json in Resources */,
+				99135761203F38C700022371 /* gradient_animated_background.json in Resources */,
+				99135765203F3AA600022371 /* beer_bubbles.json in Resources */,
+				99135776203F4D8600022371 /* img_0.png in Resources */,
+				9913578C203F57F900022371 /* 26 - Microphone.aep in Resources */,
+				805027F51D389E5700CE3F1F /* LaunchScreen.storyboard in Resources */,
+				99135775203F4D8600022371 /* img_1.png in Resources */,
+				99135797203F64AA00022371 /* heart_rate.json in Resources */,
+				99135767203F3CF400022371 /* confetti.json in Resources */,
+				99135793203F5F0D00022371 /* message_arrow.json in Resources */,
+				991357A8203FDFC500022371 /* done_button.json in Resources */,
+				9913576D203F4BA100022371 /* smiley_stack_ii.json in Resources */,
+				9913578F203F5C5D00022371 /* material_wave_loading.json in Resources */,
+				9913577E203F511A00022371 /* Bouncy.aep in Resources */,
+				805027F21D389E5700CE3F1F /* Assets.xcassets in Resources */,
+				99135799203F653800022371 /* splashy_loader.json in Resources */,
+				99135763203F3A9400022371 /* get_started_slider..json in Resources */,
+				9913576B203F4B7600022371 /* camera.json in Resources */,
+				99135795203F61E000022371 /* ripple.json in Resources */,
+				991357A5203FDEF200022371 /* star.json in Resources */,
+				805027F01D389E5700CE3F1F /* Main.storyboard in Resources */,
+				9913577D203F511A00022371 /* preloader.json in Resources */,
+				99135777203F4D8600022371 /* collection.json in Resources */,
+				9913579B203F660100022371 /* circles.json in Resources */,
+				991357A6203FDEF200022371 /* star.aep in Resources */,
+				991357AF204004C500022371 /* img_0.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CE0A52A71BED95E7E0F7D16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Siri/Pods-Siri-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Siri/Pods-Siri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34BCE763FF7047AF1D77EAD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Siri-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3868ABF45E7525A07C7874BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Siri/Pods-Siri-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		805027E31D389E5700CE3F1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9913574E203DFC6E00022371 /* MainViewController.swift in Sources */,
+				99135750203DFE5900022371 /* UploadViewController.swift in Sources */,
+				99135754203E017600022371 /* Utility.swift in Sources */,
+				9913575E203F00A100022371 /* SiriRequestClient.swift in Sources */,
+				9913574C203DF4DD00022371 /* SpeechToTextViewController.swift in Sources */,
+				805027EB1D389E5700CE3F1F /* AppDelegate.swift in Sources */,
+				9913579F203F705100022371 /* ResponseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		805027EE1D389E5700CE3F1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				805027EF1D389E5700CE3F1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		805027F31D389E5700CE3F1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				805027F41D389E5700CE3F1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		805027F71D389E5700CE3F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		805027F81D389E5700CE3F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		805027FA1D389E5700CE3F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 328994C47B8B8EE54A98E586 /* Pods-Siri.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UDQRNR4F2;
+				INFOPLIST_FILE = Siri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.Siri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		805027FB1D389E5700CE3F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85F0A6C5896161D97D128B00 /* Pods-Siri.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2UDQRNR4F2;
+				INFOPLIST_FILE = Siri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appcoda.Siri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		805027E21D389E5700CE3F1F /* Build configuration list for PBXProject "Siri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805027F71D389E5700CE3F1F /* Debug */,
+				805027F81D389E5700CE3F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		805027F91D389E5700CE3F1F /* Build configuration list for PBXNativeTarget "Siri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805027FA1D389E5700CE3F1F /* Debug */,
+				805027FB1D389E5700CE3F1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 805027DF1D389E5700CE3F1F /* Project object */;
+}
