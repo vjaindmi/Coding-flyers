@@ -1,9 +1,7 @@
 //
 //  MainViewController.swift
-//  Siri
 //
 //  Created by Ishita Agarwal on 22/02/18.
-//  Copyright © 2018 Sahand Edrisian. All rights reserved.
 //
 
 import UIKit
