@@ -26,6 +26,8 @@ namespace MyApplication
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/css/site.css"));
+
+            BundleTable.EnableOptimizations = false;
         }
     }
 }
